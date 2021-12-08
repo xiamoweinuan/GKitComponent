@@ -7,12 +7,13 @@
 //
 
 #import "GAppDelegate.h"
-
+#import "GBaseNavViewController.h"
+#import "GTabBarController.h"
 @implementation GAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 

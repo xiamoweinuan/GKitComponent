@@ -1,0 +1,6 @@
+framework module Pods_GKitComponent_Example {
+  umbrella header "Pods-GKitComponent_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

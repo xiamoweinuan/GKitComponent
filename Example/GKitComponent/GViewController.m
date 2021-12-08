@@ -7,7 +7,8 @@
 //
 
 #import "GViewController.h"
-
+#import "GBaseNavViewController.h"
+#import "GTabBarController.h"
 @interface GViewController ()
 
 @end

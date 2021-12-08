@@ -7,11 +7,12 @@
 //
 
 @import UIKit;
-#import "GAppDelegate.h"
+#import "AppDelegate.h"
+//#import "GAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([GAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

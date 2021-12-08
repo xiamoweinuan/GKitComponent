@@ -1,0 +1,105 @@
+//
+//  DRTabBarController.m
+//  DRLive
+//
+//  Created by tg on 2020/9/10.
+//  Copyright © 2020 DRLive. All rights reserved.
+//
+
+#import "DRTabBarController.h"
+#import "ViewController.h"
+#import "DRTabBar.h"
+#import "DRTabBarItem.h"
+#import "DRBaseNavViewController.h"
+@interface DRTabBarController ()<DRLTabBarDelegate>
+@property (strong, nonatomic) NSMutableArray <UIImage *>*Homes;
+@property (strong, nonatomic) NSMutableArray <UIImage *>*lives;
+@property (strong, nonatomic) NSMutableArray <UIImage *>*mines;
+@property (strong, nonatomic) DRTabBar* drTabBar;
+@end
+
+@implementation DRTabBarController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor  = kWhiteColor;
+
+    
+    
+    [self creatTagbBarWithChildVCArray:@[[[ViewController alloc] init],[[ViewController alloc] init],[[ViewController alloc] init],[[ViewController alloc] init]] titleArray:@[@"首页",@"关注",@"发现",@"我的"] imageArray:@[@"tab_home1",@"tab_gaunzhu1",@"tab_acti1",@"tab_mine1"] selectedImageArray:@[@"tab_home2",@"tab_gaunzhu2",@"tab_acti2",@"tab_mine2"] withAnimateImages:@[]];
+
+    
+//隐藏分割线
+          [UITabBar appearance].clipsToBounds = YES;
+    // Do any additional setup after loading the view.
+    
+    
+    self.selectedIndex = 0;
+}
+- (void)creatTagbBarWithChildVCArray:(NSArray <UIViewController *>*)childVCArray titleArray:(NSArray <NSString *> *)titleArray imageArray:(NSArray <NSString *>*)imageArray selectedImageArray:(NSArray <NSString *> *)selectedImageArray withAnimateImages:(NSArray <NSArray *>*)animateArray {
+    NSMutableArray* arrayVc = @[].mutableCopy;
+    for (UIViewController *viewController in childVCArray) {
+        DRBaseNavViewController *navigationController = [[DRBaseNavViewController alloc] initWithRootViewController:viewController];
+        [arrayVc addObject:navigationController];
+    }
+    self.drTabBar = [DRTabBar tabBarWithFrame:self.tabBar.bounds titleArray:titleArray imageArray:imageArray selectedImageArray:selectedImageArray withAnimateImages:animateArray withCenterImage:[UIImage imageNamed:@"tab_center"]];
+    self.drTabBar.JZLTabBarDelegate = self;
+//    // 设置一个自定义 View,大小等于 tabBar 的大小
+//    UIView *bgView = [[UIView alloc] initWithFrame:self.tabBar.bounds];
+//    // 给自定义 View 设置颜色
+//    bgView.backgroundColor = kWhiteColor;
+//    // 将自定义 View 添加到 tabBar 上
+//    [self.drTabBar insertSubview:bgView atIndex:0];
+    
+/*
+    //设置背景
+    [self.drTabBar setBackgroundImage:[[UIImage alloc]init]];
+    [self.drTabBar setBackgroundImage:[self imageWithColor:[UIColor redColor]]];
+*/
+    
+
+    
+    [self setValue:self.drTabBar forKeyPath:@"tabBar"];
+    self.viewControllers = arrayVc;
+    self.selectedIndex = 0;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
+#pragma mark - cansTabBarDelegate
+- (void)selectedJZLTabBarItemAtIndex:(NSInteger)index {
+    self.selectedIndex = index;
+}
+
+-(BOOL)willSelectedJZLTabBarItemAtIndex:(NSInteger)index{
+//    DRBaseNavViewController* vc =  self.viewControllers[index];
+
+//    if (![ vc.topViewController isKindOfClass:[HomeViewController class]]
+     
+ 
+    return YES;
+}
+- (void)selectedJZLTabBarCenter{
+    
+    
+}
+#pragma mark - 重写selectedIndex的set方法
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
+    [super setSelectedIndex:selectedIndex];
+    self.drTabBar.selectedIndex = selectedIndex;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

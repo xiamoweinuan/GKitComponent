@@ -1,0 +1,6 @@
+framework module Pods_GKitComponent_Tests {
+  umbrella header "Pods-GKitComponent_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

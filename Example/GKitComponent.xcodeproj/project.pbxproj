@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		01C510F3126489DB53F267D0 /* Pods_GKitComponent_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4CE1954DEC9ECAB82AE1A8 /* Pods_GKitComponent_Example.framework */; };
+		3B4DFD59275F0E8C00398B33 /* cmd.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B4DFD58275F0E8B00398B33 /* cmd.rtf */; };
+		3B4DFDBA275F975300398B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DFDB9275F975300398B33 /* AppDelegate.m */; };
+		3B4DFDC9275F996A00398B33 /* HomeViewControllerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DFDBE275F996900398B33 /* HomeViewControllerService.m */; };
+		3B4DFDCA275F996A00398B33 /* LoginViewCtrlServiceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DFDC1275F996900398B33 /* LoginViewCtrlServiceImp.m */; };
+		3B4DFDCB275F996A00398B33 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DFDC4275F996900398B33 /* HomeViewController.m */; };
+		3B4DFDCC275F996A00398B33 /* LoginViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DFDC7275F996900398B33 /* LoginViewCtrl.m */; };
 		59DA2DBFE69DC112A53399A1 /* Pods_GKitComponent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB788DE70F6365CB4782C01F /* Pods_GKitComponent_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* GAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* GAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* GViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* GViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -37,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B4DFD58275F0E8B00398B33 /* cmd.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = cmd.rtf; sourceTree = "<group>"; };
+		3B4DFDB8275F975300398B33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B4DFDB9275F975300398B33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B4DFDBD275F996900398B33 /* HomeViewControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerService.h; sourceTree = "<group>"; };
+		3B4DFDBE275F996900398B33 /* HomeViewControllerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerService.m; sourceTree = "<group>"; };
+		3B4DFDC0275F996900398B33 /* LoginViewCtrlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewCtrlService.h; sourceTree = "<group>"; };
+		3B4DFDC1275F996900398B33 /* LoginViewCtrlServiceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewCtrlServiceImp.m; sourceTree = "<group>"; };
+		3B4DFDC4275F996900398B33 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3B4DFDC5275F996900398B33 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3B4DFDC7275F996900398B33 /* LoginViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewCtrl.m; sourceTree = "<group>"; };
+		3B4DFDC8275F996900398B33 /* LoginViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewCtrl.h; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GKitComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKitComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +61,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* GKitComponent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKitComponent-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* GAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* GAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* GViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* GViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,16 +70,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6152318C022B194D200B4CDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6152318C022B194D200B4CDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		70795D7655E6245E55316C21 /* Pods-GKitComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKitComponent_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GKitComponent_Tests/Pods-GKitComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E177F156CDEDF06FF7D66EE /* Pods-GKitComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKitComponent_Example.release.xcconfig"; path = "Target Support Files/Pods-GKitComponent_Example/Pods-GKitComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
-		919221D22B969CE07E4FAEE0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		919221D22B969CE07E4FAEE0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A5C0ADC273F4B52B0A27599C /* Pods-GKitComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKitComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-GKitComponent_Tests/Pods-GKitComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AF4CE1954DEC9ECAB82AE1A8 /* Pods_GKitComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKitComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C1F50BD590EDDB44D9857F /* Pods-GKitComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKitComponent_Example.debug.xcconfig"; path = "Target Support Files/Pods-GKitComponent_Example/Pods-GKitComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CACC98615F44E775E0BB9819 /* GKitComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GKitComponent.podspec; path = ../GKitComponent.podspec; sourceTree = "<group>"; };
+		CACC98615F44E775E0BB9819 /* GKitComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKitComponent.podspec; path = ../GKitComponent.podspec; sourceTree = "<group>"; };
 		FB788DE70F6365CB4782C01F /* Pods_GKitComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKitComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,8 +117,63 @@
 				70795D7655E6245E55316C21 /* Pods-GKitComponent_Tests.debug.xcconfig */,
 				A5C0ADC273F4B52B0A27599C /* Pods-GKitComponent_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3B4DFDBB275F996900398B33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDBC275F996900398B33 /* Home */,
+				3B4DFDBF275F996900398B33 /* Login */,
+			);
+			name = Services;
+			path = ../../Services;
+			sourceTree = "<group>";
+		};
+		3B4DFDBC275F996900398B33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDBD275F996900398B33 /* HomeViewControllerService.h */,
+				3B4DFDBE275F996900398B33 /* HomeViewControllerService.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B4DFDBF275F996900398B33 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDC0275F996900398B33 /* LoginViewCtrlService.h */,
+				3B4DFDC1275F996900398B33 /* LoginViewCtrlServiceImp.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3B4DFDC2275F996900398B33 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDC3275F996900398B33 /* Home */,
+				3B4DFDC6275F996900398B33 /* Login */,
+			);
+			name = Modules;
+			path = ../../Modules;
+			sourceTree = "<group>";
+		};
+		3B4DFDC3275F996900398B33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDC4275F996900398B33 /* HomeViewController.m */,
+				3B4DFDC5275F996900398B33 /* HomeViewController.h */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B4DFDC6275F996900398B33 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DFDC7275F996900398B33 /* LoginViewCtrl.m */,
+				3B4DFDC8275F996900398B33 /* LoginViewCtrl.h */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -144,11 +213,13 @@
 		6003F593195388D20070C39A /* Example for GKitComponent */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* GAppDelegate.h */,
-				6003F59D195388D20070C39A /* GAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* GViewController.h */,
 				6003F5A6195388D20070C39A /* GViewController.m */,
+				3B4DFDB8275F975300398B33 /* AppDelegate.h */,
+				3B4DFDB9275F975300398B33 /* AppDelegate.m */,
+				3B4DFDC2275F996900398B33 /* Modules */,
+				3B4DFDBB275F996900398B33 /* Services */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,6 +264,7 @@
 				CACC98615F44E775E0BB9819 /* GKitComponent.podspec */,
 				6152318C022B194D200B4CDF /* README.md */,
 				919221D22B969CE07E4FAEE0 /* LICENSE */,
+				3B4DFD58275F0E8B00398B33 /* cmd.rtf */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -248,6 +320,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "gaoshuangone@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = D66DGQB56W;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +334,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -280,6 +357,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				3B4DFD59275F0E8C00398B33 /* cmd.rtf in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,11 +402,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GKitComponent_Example/Pods-GKitComponent_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GKit/GKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GKitComponent/GKitComponent.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKitComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,9 +446,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* GAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* GViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				3B4DFDCA275F996A00398B33 /* LoginViewCtrlServiceImp.m in Sources */,
+				3B4DFDBA275F975300398B33 /* AppDelegate.m in Sources */,
+				3B4DFDCC275F996A00398B33 /* LoginViewCtrl.m in Sources */,
+				3B4DFDC9275F996A00398B33 /* HomeViewControllerService.m in Sources */,
+				3B4DFDCB275F996A00398B33 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,12 +580,15 @@
 			baseConfigurationReference = C2C1F50BD590EDDB44D9857F /* Pods-GKitComponent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D66DGQB56W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKitComponent/GKitComponent-Prefix.pch";
 				INFOPLIST_FILE = "GKitComponent/GKitComponent-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_com.gaos.com1_;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +599,15 @@
 			baseConfigurationReference = 8E177F156CDEDF06FF7D66EE /* Pods-GKitComponent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D66DGQB56W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKitComponent/GKitComponent-Prefix.pch";
 				INFOPLIST_FILE = "GKitComponent/GKitComponent-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_com.gaos.com1_;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

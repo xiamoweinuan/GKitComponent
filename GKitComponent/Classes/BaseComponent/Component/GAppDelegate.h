@@ -7,9 +7,15 @@
 //
 
 @import UIKit;
+@protocol AppDelegateProtocol <NSObject>
+@optional
+-(id)getRootViewController;
 
-@interface GAppDelegate : UIResponder <UIApplicationDelegate>
+@end
+@interface GAppDelegate : UIResponder <UIApplicationDelegate,AppDelegateProtocol>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @end
+
+
