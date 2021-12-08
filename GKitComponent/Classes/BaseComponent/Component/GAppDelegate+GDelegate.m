@@ -41,7 +41,7 @@
         tab = [self getRootViewController];
     }else{
         
-        tab  =[[GTabBarController alloc]initWithTabBarControlerWithChildVCArray:@[[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"]]
+        tab  =[[GTabBarController alloc]initWithTabBarControlerWithChildVCArray:@[[[GRouter shard] findModWithName:@"GBaseViewController"],[[GRouter shard] findModWithName:@"GBaseViewController"],[[GRouter shard] findModWithName:@"GBaseViewController"],[[GRouter shard] findModWithName:@"GBaseViewController"]]
                                                                      titleArray:@[@"1",@"2",@"3",@"4"]
                                                                      imageArray:@[]
                                                              selectedImageArray:@[]
