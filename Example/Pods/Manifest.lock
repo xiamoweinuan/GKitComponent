@@ -1,7 +1,7 @@
 PODS:
   - GKit (0.0.23):
     - Masonry
-  - GKitComponent (0.0.1):
+  - GKitComponent (0.0.2):
     - GKit
   - Masonry (1.1.0)
 
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GKit: bb17bb730dc3168be723586532829722d21a055e
-  GKitComponent: d37563d999dde4ac927fee2c3e65f2d87fe49edd
+  GKitComponent: 04f36d62dfbdcab95d16b7c864d3a4e3183eee36
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: c15e974c3115d311d20aeb43fb173a02d5cf6c4d

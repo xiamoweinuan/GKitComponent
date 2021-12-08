@@ -20,25 +20,59 @@
     [self applicationExchangeMethod:application didFinishLaunchingWithOptions:launchOptions];
     
     
-    if ([self respondsToSelector:@selector(getRootViewController)]) {
-  
-        self.window.rootViewController = [self getRootViewController];
-    }else{
-        GTabBarController* tab =[[GTabBarController alloc]initWithTabBarControlerWithChildVCArray:@[[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"]]
-                                                                                       titleArray:@[@"1",@"2",@"3",@"4"]
-                                                                                       imageArray:@[]
-                                                                               selectedImageArray:@[]
-                                                                                withAnimateImages:@[]];
-
-        self.window.rootViewController = tab;
-    }
+    [self setupTabBarRootViewController:0  WithBlock:nil];
     
     
     [self.window makeKeyAndVisible];
-
+    
     return  YES;
 }
-
+-(void)setupTabBarRootViewController:(NSInteger)index WithBlock:(void (^)(void))block{
+    
+    
+    if ([UIApplication sharedApplication].delegate.window) {//可能释放不了，可以loginvc当作window或者子vc
+        
+        [[UIApplication sharedApplication].delegate.window.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [UIApplication sharedApplication].delegate.window.rootViewController =nil;
+    }
+    GTabBarController* tab = nil;
+    if ([self respondsToSelector:@selector(getRootViewController)]) {
+        
+        tab = [self getRootViewController];
+    }else{
+        
+        tab  =[[GTabBarController alloc]initWithTabBarControlerWithChildVCArray:@[[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"],[[GRouter shard] findModWithName:@"HomeViewController"]]
+                                                                     titleArray:@[@"1",@"2",@"3",@"4"]
+                                                                     imageArray:@[]
+                                                             selectedImageArray:@[]
+                                                              withAnimateImages:@[]];
+    }
+    
+    
+    // 设置一个自定义 View,大小等于 tabBar 的大小
+    UIView *bgView = [[UIView alloc] initWithFrame:tab.tabBar.bounds];
+    // 给自定义 View 设置颜色
+    bgView.backgroundColor = [UIColor lightGrayColor];
+    // 将自定义 View 添加到 tabBar 上
+    [tab.drTabBar insertSubview:bgView atIndex:0];
+    if (index !=0) {
+        tab.selectedIndex = index;
+    }
+    [UIView transitionWithView:[UIApplication sharedApplication].delegate.window
+                      duration:0.5f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+        BOOL oldState = [UIView areAnimationsEnabled];
+        [UIView setAnimationsEnabled:NO];
+        [UIApplication sharedApplication].delegate.window.rootViewController = tab;
+        [UIView setAnimationsEnabled:oldState];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    
+    
+}
 + (void)load {
     //SceneDelegate暂时用不到
 #if __has_include("SceneDelegate.h")

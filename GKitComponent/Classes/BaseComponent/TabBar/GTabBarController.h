@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTabBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GTabBarController : UITabBarController
 
 - (instancetype)initWithTabBarControlerWithChildVCArray:(NSArray <UIViewController *>*)childVCArray titleArray:(NSArray <NSString *> *)titleArray imageArray:(NSArray <NSString *>*)imageArray selectedImageArray:(NSArray <NSString *> *)selectedImageArray withAnimateImages:(NSArray <NSArray *>*)animateArray;
+@property (strong, nonatomic) GTabBar* drTabBar;
 
 @end
 

@@ -8,7 +8,6 @@
 
 #import "GTabBarController.h"
 #import "GBaseViewController.h"
-#import "GTabBar.h"
 #import "GTabBarItem.h"
 #import "GBaseNavViewController.h"
 #import "GRouter.h"
@@ -18,7 +17,6 @@
 @property (nonatomic, strong) NSArray *imageArray;
 @property (nonatomic, strong) NSArray *selectedImageArray;
 @property (nonatomic, strong) NSArray *animuteImageArray;
-@property (strong, nonatomic) GTabBar* drTabBar;
 @end
 
 @implementation GTabBarController
