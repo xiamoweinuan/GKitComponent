@@ -9,8 +9,14 @@
 @import UIKit;
 @protocol AppDelegateProtocol <NSObject>
 @optional
-/**子类可以实现这个这个方法自定义tabbarController*/
--(id)getRootViewController;
+/**初始化一个空的tabba*/
+-(void)installRootViewController;
+/**返回自定义的tabbar*/
+-(id)getTabRootViewController;
+/**配置项*/
+-(void)installConfig;
+/**切换tabbar的selectedIndex*/
+-(void)setupTabBarRootViewController:(NSInteger)index WithBlock:(void (^)(void))block;
 
 @end
 /**UIApplicationMain中直接加载使用或者

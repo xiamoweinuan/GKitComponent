@@ -8,6 +8,7 @@
 
 #import "GRouter.h"
 #import "GHeader.h"
+#import "GBaseNavViewController.h"
 #define   KEY_Delegate @"Delegate"
 #define   KEY_Service @"Service"
 @interface GRouter ()
@@ -156,8 +157,9 @@
 -(void)pushCanvas:(NSString *)modeName{
     UIViewController* vc = [self findModWithName:modeName];
     [_runingModules setObject:vc forKey:modeName];
-
+    vc.hidesBottomBarWhenPushed = YES;
     [kGetCurrentVC.navigationController pushViewController:vc animated:YES];
+
 }
 
 -(void)pushCanvas:(NSString *)modeName withBlock:(void (^)(UIViewController* vc))block{
@@ -211,7 +213,13 @@
 }
 -(void)presentCanvas:(NSString *)modeName wihtCompletion: (void (^)(void))completion{
     UIViewController* vc = [self findModWithName:modeName];
+    
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    GBaseNavViewController* nav = [[GBaseNavViewController alloc]initWithRootViewController:vc];
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+    nav.modalPresentationCapturesStatusBarAppearance = NO;
+    nav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    nav.navigationController.navigationBarHidden = YES;
     [_runingModules setObject:vc forKey:modeName];
     [kGetCurrentVC presentViewController:vc animated:YES completion:completion];
 }

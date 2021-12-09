@@ -13,9 +13,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    [self installRootViewController];
 
     // Override point for customization after application launch.
-    [super application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

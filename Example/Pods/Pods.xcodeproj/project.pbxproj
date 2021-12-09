@@ -79,14 +79,12 @@
 		B887B9304416AB6615A9BA9E204471B3 /* UINavigationController+FullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3569CF3FA0426B079EB253D519DFDDC3 /* UINavigationController+FullscreenPopGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8AD283960E17053BD5DC02407114292 /* UIAlertController+GAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = E6151497782096E47A32F5F65C194E0E /* UIAlertController+GAlert.m */; };
 		BD1D8C49514BEC3E658EE69E8CB742B3 /* UIAlertController+GAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 514AD7FEA44A113E53E89D3173CDA83E /* UIAlertController+GAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFF553806702672B7897EA54A9CB2C60 /* GAppDelegate+GDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7620D11288773DEA09FDE221891B0D8 /* GAppDelegate+GDelegate.m */; };
 		C2D37BFA899E9037B8FB124AC1277D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		C407E99803A0B3FCDE6387374E91BB94 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A546D1927D66440BEA63307E8E5DB /* NSArray+MASAdditions.m */; };
 		C44866523D54E6B342B405EC09718447 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A49932F6511EAAAE1E72E67E8824AA63 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CA3C24A1B5B4BC07C7277F3B1037EB43 /* GINLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8D0D0A074E17B84491DE8FFFCA0227 /* GINLINE.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBBB1AF0665191115748E72D9D9FE11F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		CD5373E796A17C968CA0246E3400597D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		D411D19266F800CED7DBC3D6F7F1B90F /* GAppDelegate+GDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 113EAF3C39B002FF3B48ECA0549BFB77 /* GAppDelegate+GDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D42FB3BEDA267ABFFEC0672691105E6E /* GBaseChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61656D5E0FA4DA5D39764FEAE5281E5C /* GBaseChainModel.m */; };
 		D61BC6B9C4FE7676B6E83546B5C27D68 /* GKitComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DA8E3EC42D6DCC0F3C14B267ABBDFD /* GKitComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E404018B3103C2D16BF3401DE58643 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF8FB4452CC3E4A00E23F253243FD1 /* MASConstraint.m */; };
@@ -162,7 +160,6 @@
 		089134A779979E0B8C1431065EAC294C /* NSFileManager+GFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+GFileManager.m"; path = "GKit/Classes/Kit/Catefory/NSFileManager+GFileManager.m"; sourceTree = "<group>"; };
 		0A7CC1F865088F96391C8965792FC016 /* GBaseNavViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBaseNavViewController.m; path = GKitComponent/Classes/BaseComponent/GBaseNavViewController.m; sourceTree = "<group>"; };
 		0C9F109611AD2555E7811623199D5FBB /* UITabBar+Gadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Gadge.m"; sourceTree = "<group>"; };
-		113EAF3C39B002FF3B48ECA0549BFB77 /* GAppDelegate+GDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GAppDelegate+GDelegate.h"; sourceTree = "<group>"; };
 		12EC84CBF1BB920EA8FA7A286B0C2714 /* GKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKit.debug.xcconfig; sourceTree = "<group>"; };
 		166470DFCE02F3A5A3C58BD1062C46F0 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		16F3FB3FD8CC016445DE50C472675587 /* GMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMacros.h; path = GKit/Classes/Kit/GMacros.h; sourceTree = "<group>"; };
@@ -236,7 +233,7 @@
 		98E8C9B2E4F1A0081E208A4D94C1E9DA /* Pods-GKitComponent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKitComponent_Example-Info.plist"; sourceTree = "<group>"; };
 		9A8826946A550EA3C2B06E871CEB180E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		9ADB41B34869F367FC7F0813EB047503 /* GKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKit-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FBF8FB4452CC3E4A00E23F253243FD1 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A126F582944941DA326618F4715DE338 /* Pods-GKitComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKitComponent_Tests-Info.plist"; sourceTree = "<group>"; };
 		A49932F6511EAAAE1E72E67E8824AA63 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
@@ -254,7 +251,7 @@
 		BE4A546D1927D66440BEA63307E8E5DB /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		C404FB21E12DDBFB53F2B9A390B725D3 /* GKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKit-umbrella.h"; sourceTree = "<group>"; };
 		C504B42DB5E8630795C5385511F3410A /* GViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GViewChainModel.m; path = GKit/Classes/Kit/Chain/GViewChainModel.m; sourceTree = "<group>"; };
-		C5EB243DF33D2F1B20CE78D771A47B60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C5EB243DF33D2F1B20CE78D771A47B60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C6A0E12162922F6D7F5E3F02A1F3B093 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		C7B36792FD72E07DA098FBAB85C2D6BF /* Pods-GKitComponent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKitComponent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C7F123CD992226684BB96DB5D8956646 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -277,14 +274,13 @@
 		ED48966BCF4DEC66A1678CDCB1E6058D /* GHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHeader.h; path = GKit/Classes/Kit/GHeader.h; sourceTree = "<group>"; };
 		EDAC18085449C4F0EFA24DE966D474F0 /* Pods-GKitComponent_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GKitComponent_Example"; path = Pods_GKitComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBB51AFB228C02318F8FED7C442C207 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		F1B8B8010D4006B82F80DF7F94B6A839 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F1B8B8010D4006B82F80DF7F94B6A839 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F27C0C5D880C039CC717AD50732A18C1 /* GKitComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKitComponent.release.xcconfig; sourceTree = "<group>"; };
 		F35120760FF457DA13F224E618F50A01 /* Pods-GKitComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKitComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F50F4632F6AB0202BE46E1AE250F1230 /* Pods-GKitComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKitComponent_Example.modulemap"; sourceTree = "<group>"; };
 		F591780AB42BCA1A1B62E93CFA1471B6 /* NSFileManager+GFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+GFileManager.h"; path = "GKit/Classes/Kit/Catefory/NSFileManager+GFileManager.h"; sourceTree = "<group>"; };
 		F72248C0437B4702B35687AACFA214B0 /* GModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GModuleManager.m; sourceTree = "<group>"; };
-		F74D504EF70C34D3FE112ABA01C57341 /* GKitComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GKitComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F7620D11288773DEA09FDE221891B0D8 /* GAppDelegate+GDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GAppDelegate+GDelegate.m"; sourceTree = "<group>"; };
+		F74D504EF70C34D3FE112ABA01C57341 /* GKitComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GKitComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F9F6484F3DBF2F63DFF4F9D0044260ED /* GKitComponent */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKitComponent; path = GKitComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8D0D0A074E17B84491DE8FFFCA0227 /* GINLINE.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GINLINE.h; path = GKit/Classes/Kit/GINLINE.h; sourceTree = "<group>"; };
 		FE7E6E4CCF4C55FC49364AD8BFA84AD0 /* GKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKit-prefix.pch"; sourceTree = "<group>"; };
@@ -449,7 +445,6 @@
 				386EE4A2F77F9FDB98F265FB3A825CA0 /* ViewController+MASAdditions.m */,
 				DE0F10BC592E5372589FDBFA749BD7EF /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -498,8 +493,6 @@
 			children = (
 				7CED875F1F15BCBE4E536E7D50DCC8E6 /* GAppDelegate.h */,
 				005B23824B149B5DFE0693F094E03014 /* GAppDelegate.m */,
-				113EAF3C39B002FF3B48ECA0549BFB77 /* GAppDelegate+GDelegate.h */,
-				F7620D11288773DEA09FDE221891B0D8 /* GAppDelegate+GDelegate.m */,
 				E3823E4C882BB8B6E579D987AECA83EA /* GModProtocol.h */,
 				79861FA630595D08E8F741F8631CBF9E /* GModuleManager.h */,
 				F72248C0437B4702B35687AACFA214B0 /* GModuleManager.m */,
@@ -557,7 +550,6 @@
 				D79A9F76832F07F0B80200FB34182C86 /* ZJAnimationPopView.m */,
 				76995D57DBB08060A31CFEC10C1E80A0 /* Support Files */,
 			);
-			name = GKit;
 			path = GKit;
 			sourceTree = "<group>";
 		};
@@ -640,7 +632,6 @@
 			files = (
 				F6BEF38609FA3348DD9DE76F2770B427 /* FullscreenPopGesture.h in Headers */,
 				2FA7268B7E7F33EF8CF636F0A24D73E4 /* GAppDelegate.h in Headers */,
-				D411D19266F800CED7DBC3D6F7F1B90F /* GAppDelegate+GDelegate.h in Headers */,
 				9EC37DCAB3D1F85C4A57A9613A5706F3 /* GBaseNavViewController.h in Headers */,
 				945E69BF78364047226D6BFC5C6F82AA /* GBaseViewController.h in Headers */,
 				D61BC6B9C4FE7676B6E83546B5C27D68 /* GKitComponent-umbrella.h in Headers */,
@@ -913,7 +904,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				40FC3130A21439EA06F463B626D198DF /* GAppDelegate.m in Sources */,
-				BFF553806702672B7897EA54A9CB2C60 /* GAppDelegate+GDelegate.m in Sources */,
 				0338D0BC582CE39A3FC1F3C6B49CD017 /* GBaseNavViewController.m in Sources */,
 				EA2E687886CCF02565DF62731C623379 /* GBaseViewController.m in Sources */,
 				7CC8E77C11F03F16C4460AD0E677A743 /* GKitComponent-dummy.m in Sources */,
@@ -1319,8 +1309,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
